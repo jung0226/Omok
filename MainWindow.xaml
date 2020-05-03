@@ -1,0 +1,25 @@
+﻿<Window x:Class="Omok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Omok"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="메뉴" Click="MenuItem_Click">
+                <MenuItem Header="다시시작" Click="MenuItem_Click_3"/>
+                <MenuItem Header="종료" Click="MenuItem_Click_2"/>
+            </MenuItem>
+            <MenuItem Header="번호">
+                <MenuItem Header="번호표시하기" Click="MenuItem_Click"/>
+                <MenuItem Header="번호표시안함" Click="MenuItem_Click_1"/>
+            </MenuItem>
+        </Menu>
+        <Canvas x:Name="canvas1" Width="580" Height="580" Background="Cornsilk" MouseDown="canvas1_MouseDown"></Canvas>
+    </StackPanel>
+
+    
+</Window>
